@@ -1,38 +1,25 @@
-.App {
-  text-align: center;
+.wrapper {
+    background: url('https://screenbeauty.com/image/download/4625-corona-del-mar-newport-beach-original.jpg') top center no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 60px 1fr;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 10px;
+    grid-template-areas:
+    'h h'
+    'n c';
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.contentWrapper {
+    grid-area: c;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

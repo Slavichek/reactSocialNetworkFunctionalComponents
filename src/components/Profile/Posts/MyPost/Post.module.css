@@ -1,0 +1,16 @@
+.post__item {
+    margin-bottom: 20px;
+}
+.post__img {
+    width: 45px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+.post__message,
+.post__likes {
+    color: #fff;
+    font-weight: bold;
+}
+.post__message {
+    margin-right: 20px;
+}

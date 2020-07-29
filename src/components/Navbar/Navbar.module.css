@@ -1,0 +1,38 @@
+
+.nav {
+    grid-area: n;
+    padding: 30px 0px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.navList {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.navItem {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.navLink {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .25s ease;
+}
+.navLink.active {
+    color: gold;
+}
+
+.navItem:hover {
+    background:RGBA(255,101,80,0.4);
+}
+
+.navItem:hover .navLink{
+    text-decoration: underline;
+}
+

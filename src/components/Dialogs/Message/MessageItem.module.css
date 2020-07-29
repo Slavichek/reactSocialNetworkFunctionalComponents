@@ -1,0 +1,10 @@
+.message__item {
+    padding: 10px 15px;
+    color: #fff; 
+    display: block;     
+}
+
+.active {
+    color: gold;
+}
+
