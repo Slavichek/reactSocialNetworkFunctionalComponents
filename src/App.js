@@ -12,6 +12,7 @@ import './app.css'
 
 
 const App = (props) => {
+    console.log(props)
 
     return (
         <div className="wrapper">
@@ -24,10 +25,11 @@ const App = (props) => {
                     {/* <Route  path='/dialogs' component={Dialogs} />
                         <Route path='/profile' component={Profile} /> */}
                     <Route path='/dialogs' render={() =>
-                        <Dialogs dialogMessage={props.state.messagePage.messagePosts} dialogUser={props.state.messagePage.messageUser} />} />
-
+                        <Dialogs dialogMessage={props.state.dialogPage.dialogMessage}
+                            dialogUser={props.state.dialogPage.dialogUser} addDialog={props.addDialogMessage} />} />
                     <Route path='/profile' render={() =>
-                        <Profile posts={props.state.profilePage.profileMessage} />} />
+                        <Profile profilePage={props.state.profilePage} addPost={props.addPost}
+                            updateNewPostText={props.updateNewPostText} />} />
                     <Route path='/news' component={News} />
                     <Route path='/music' component={Music} />
 

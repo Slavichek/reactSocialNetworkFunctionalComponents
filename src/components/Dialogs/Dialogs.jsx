@@ -5,13 +5,23 @@ import DialogItem from './DialogItem/DialogItem';
 import MessageItem from './Message/MessageItem';
 
 
+
 const Dialogs = (props) => {
 
-    debugger;
-    let dialogUser = props.dialogUser.map((user) => <DialogItem name={user.name} id={user.id} />
-    )
+
+    let dialogUser = props.dialogUser.map((user) => <DialogItem name={user.name} id={user.id} />)
 
     let dialogMessage = props.dialogMessage.map((userMessage) => <MessageItem id={userMessage.id} message={userMessage.message} />)
+
+    let newDialogElement = React.createRef();
+
+    let addDialog = () => {
+        let text = newDialogElement.current.value;
+        props.addDialog(text);
+
+    }
+
+
 
 
     return (
@@ -21,6 +31,10 @@ const Dialogs = (props) => {
             </div>
             <div className={classes.message__list}>
                 {dialogMessage}
+                <div>
+                    <textarea name="" id="" cols="30" rows="10" ref={newDialogElement}></textarea>
+                    <button onClick={addDialog}>add dilog</button>
+                </div>
             </div>
         </div>
     )

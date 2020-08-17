@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+    padding: 0;
+}
 .wrapper {
     background: url('https://screenbeauty.com/image/download/4625-corona-del-mar-newport-beach-original.jpg') top center no-repeat;
     height: 100vh;
